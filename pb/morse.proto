@@ -1,0 +1,18 @@
+/*
+ * @Author: Gaston Siffert 
+ * @Date: 2017-05-30 21:51:02 
+ * @Last Modified by: Gaston Siffert
+ * @Last Modified time: 2017-05-30 21:58:51
+ */
+syntax = "proto3";
+
+service Morse {
+    rpc Translate(Body) returns (Empty) {}
+}
+
+message Body {
+    string data = 1;
+}
+
+message Empty {
+}
